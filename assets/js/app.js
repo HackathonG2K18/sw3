@@ -1,5 +1,5 @@
 const baseUrl = 'https://swapi.co/api/'
-const characterSection = document.querySelector('.characters')
+const characterSection = document.querySelector('#partner1')
 
 function getCharacters() {
 
@@ -10,7 +10,7 @@ function getCharacters() {
         .then(function (people) {
             console.log(people)
             var peopleArray = people.results
-            for (var i = 0; i < peopleArray.length; i++) {
+            for (var i = 0; i < 3; i++) {
                 var person = people.results[i]
                 var name = person.name
                 var hairColor = person.hair_color
@@ -19,12 +19,13 @@ function getCharacters() {
                 var gender = person.gender
                 var html = `
           <section>
-            <h3>${name}</h3>
+            <h2>${name}</h2>
             <ul>
               <li>Hair: ${hairColor}</li>
               <li>Height: ${height}cm</li>
               <li>Species: ${species}</li>
               <li>Gender: ${gender}</li>
+              <button>Boldly Go</button>
             </ul>
           </section>
         `
@@ -32,40 +33,5 @@ function getCharacters() {
 
             }
         })
-        .then(function (urlFromAPI) {
-            console.log('THEN URL', urlFromAPI)
-
-            getMoreCharacters(urlFromAPI)
-
-
-        })
 }
-
-// function getMoreCharacters(url) {
-//     fetch(url)
-//         .then(function (response) {
-//             return response.json()
-//         })
-//         .then(function (morePeople) {
-//             console.log(morePeople)
-//             var characters = morePeople.results
-//             for (let i = 0; i < characters.length; i++) {
-//                 var person = characters[i]
-//                 var name = person.name
-//                 var hairColor = person.hair_color
-//                 var height = person.height
-
-//                 var html = `
-//         <section>
-//           <h3>${name}</h3>
-//           <ul>
-//             <li>Hair:${hairColor}</li>
-//             <li>Height:${height}cm</li>
-//           </ul>
-//         </section>
-//       `
-//                 characterSection.innerHTML += html
-//             }
-//         })
-
-// }
+getCharacters()
