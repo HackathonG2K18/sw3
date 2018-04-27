@@ -7,69 +7,67 @@ const sexPartner = document.querySelector('.sex-partner')
 
 function getCharacters() {
 
-    fetch(baseUrl + (Math.random() * 88).toFixed(0) + '/')
+    fetch(baseUrl)
         .then(function (response) {
             return response.json()
         })
         .then(function (people) {
-            var nameH2 = document.createElement('h2')
-                name = people.namenameH2.innerText = name
-                sexPartner.appendChild(nameH2)
-            // var peopleArray = people.results
-            // for (var i = 0; i < peopleArray.length; i++) {
-            //     var person = people.results[i]
-            //     var name = person.name
-            //     var hairColor = person.hair_color
-            //     var height = person.height
-            //     var gender = person.gender
-            //     var nameH2 = document.createElement('h2')
-            //     nameH2.innerText = name
-            //     sexPartner.appendChild(nameH2)
-        //         var html = `
-        //   <section>
-        //     <h2>${name}</h2>
-        //     <ul>
-        //       <li>Hair: ${hairColor}</li>
-        //       <li>Height: ${height}cm</li>
-        //       <li>Gender: ${gender}</li>
-        //     </ul>
-        //   </section>
-        // `
-        //         characterSection.innerHTML += html
+            var peopleArray = people.results
+            for (var i = 0; i < 1; i++) {
+                let random = Math.floor(Math.random() * 10)
+                var person = people.results[random]
+                var name = person.name
+                var hairColor = person.hair_color
+                var height = person.height
+                var gender = person.gender
+                var html = `
+          <section>
+            <h2>${name}</h2>
+            <ul>
+              <li>Hair: ${hairColor}</li>
+              <li>Height: ${height}cm</li>
+              <li>Gender: ${gender}</li>
+            </ul>
+          </section>
+        `
+                characterSection.innerHTML += html
 
             // }
         })
 }
+
+
+
+
+function getPartner2() {
+
+    fetch(baseUrl)
+        .then(function (response) {
+            return response.json()
+        })
+        .then(function (people) {
+            var peopleArray = people.results
+            for (var i = 0; i < 1; i++) {
+                let random = Math.floor(Math.random() * 10)
+                var person = people.results[random]
+                var name = person.name
+                var hairColor = person.hair_color
+                var height = person.height
+                var gender = person.gender
+                var html = `
+          <section>
+            <h2>${name}</h2>
+            <ul>
+              <li>Hair: ${hairColor}</li>
+              <li>Height: ${height}cm</li>
+              <li>Gender: ${gender}</li>
+            </ul>
+          </section>
+        `
+                characterSection2.innerHTML += html
+
+            }
+        })
+}
+getPartner2();
 getCharacters();
-
-// function getPartner2() {
-
-//     fetch(baseUrl + (Math.random() * 88).toFixed(0) + '/')
-//         .then(function (response) {
-//             return response.json()
-//         })
-//         .then(function (people) {
-//             console.log(people)
-//             var peopleArray = people.results
-//             for (var i = 0; i < 1; i++) {
-//                 var person = people.results[i]
-//                 var name = person.name
-//                 var hairColor = person.hair_color
-//                 var height = person.height
-//                 var gender = person.gender
-//                 var html = `
-//           <section>
-//             <h2>${name}</h2>
-//             <ul>
-//               <li>Hair: ${hairColor}</li>
-//               <li>Height: ${height}cm</li>
-//               <li>Gender: ${gender}</li>
-//             </ul>
-//           </section>
-//         `
-//                 partner2.innerHTML += html
-
-//             }
-//         })
-// }
-// getPartner2();
