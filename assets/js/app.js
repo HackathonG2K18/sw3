@@ -1,16 +1,17 @@
-const baseUrl = 'https://swapi.co/api/'
+const baseUrl = 'https://swapi.co/api/people/'
 const characterSection = document.querySelector('#partner1')
+const roll = math.random()
 
 function getCharacters() {
 
-    fetch(baseUrl + 'people')
+    fetch(baseUrl + 'roll')
         .then(function (response) {
             return response.json()
         })
         .then(function (people) {
             console.log(people)
             var peopleArray = people.results
-            for (var i = 0; i < peopleArray.length; i++) {
+            for (var i = 0; i < 1; i++) {
                 var person = people.results[i]
                 var name = person.name
                 var hairColor = person.hair_color
