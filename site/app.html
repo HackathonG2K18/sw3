@@ -119,7 +119,7 @@
         <div class="col-sm-6 col-lg-4 g-px-10 g-mb-20" id="partner1">
           <div class="u-block-hover g-brd-around g-brd-gray-light-v4 g-color-black g-color-white--hover g-bg-primary--hover text-center rounded g-transition-0_3 g-px-30 g-py-50">
 						<h2 class="sex-partner"></h2>
-            <img class="img-fluid u-block-hover__main--zoom-v1 mb-5" src="assets/img/Git-icon.png" alt="Image Description">
+            <img class="img-fluid u-block-hover__main--zoom-v1 mb-5" src="https://files.slack.com/files-pri/T1T555TL0-FAEJQKNVA/placeholderobi.gif" alt="Image Description">
             <h3 class="h4 g-font-weight-600 mb-0">Partner 1</h3>
             <a class="u-link-v2" href="#!"></a>
           </div>
@@ -129,7 +129,7 @@
 				</div>
         <div class="col-sm-6 col-lg-4 g-px-10 g-mb-20">
           <div class="u-block-hover g-brd-around g-brd-gray-light-v4 g-color-black g-color-white--hover g-bg-primary--hover text-center rounded g-transition-0_3 g-px-30 g-py-50">
-            <img class="img-fluid u-block-hover__main--zoom-v1 mb-5" src="assets/img/Github-icon.png" alt="Image Description">
+            <img class="img-fluid u-block-hover__main--zoom-v1 mb-5" src="https://files.slack.com/files-pri/T1T555TL0-FAEJQKNVA/placeholderobi.gif" alt="Image Description">
             <h3 class="h4 g-font-weight-600 mb-0">Partner 2</h3>
             <a class="u-link-v2" href="#!"></a>
 					</div>
@@ -246,7 +246,6 @@
     // initialization of slider revolution
       var tpj = jQuery,
         revapi1174;
-
       tpj(document).ready(function () {
         if (tpj("#rev_slider_1174_1").revolution == undefined) {
           revslider_showDoubleJqueryError("#rev_slider_1174_1");
@@ -289,40 +288,31 @@
           });
         }
       });
-
       $(document).on('ready', function () {
         // initialization of carousel
         $.HSCore.components.HSCarousel.init('.js-carousel');
-
         // initialization of tabs
         $.HSCore.components.HSTabs.init('[role="tablist"]');
-
         // initialization of popups
         $.HSCore.components.HSPopup.init('.js-fancybox');
-
         // initialization of counters
         var counters = $.HSCore.components.HSCounter.init('[class*="js-counter"]');
-
         // initialization of go to
         $.HSCore.components.HSGoTo.init('.js-go-to');
       });
-
       $(window).on('load', function () {
         // initialization of header
         $.HSCore.components.HSHeader.init($('#js-header'));
         $.HSCore.helpers.HSHamburgers.init('.hamburger');
-
         // initialization of HSMegaMenu component
         $('.js-mega-menu').HSMegaMenu({
           event: 'hover',
           pageContainer: $('.container'),
           breakpoint: 991
         });
-
         // initialization of cubeportfolio
         $.HSCore.components.HSCubeportfolio.init('.cbp');
       });
-
       $(window).on('resize', function () {
         setTimeout(function () {
           $.HSCore.components.HSTabs.init('[role="tablist"]');
