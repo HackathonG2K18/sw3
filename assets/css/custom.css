@@ -13,3 +13,11 @@
 	background-color: #333333 !important;
 	border-color: #333333 !important;
 }
+
+.align-center {
+	text-align: center;
+}
+
+.mt-10 {
+	margin-top: 10px;
+}
