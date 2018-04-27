@@ -112,12 +112,26 @@
           <!-- Footer Content -->
           <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
             <a class="d-block g-mb-20" href="index.html">
-              <h1>Trilogy</h1>
+              <h1>Trilorgy</h1>
             </a>
-            <p>"Your biological and technological distinctiveness will be added to our own."</p>
+            <p>May the force be with you.</p>
           </div>
           <!-- End Footer Content -->
+          <!-- Footer Content -->
+          <!-- <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
+            <div class="u-heading-v3-1 g-brd-white-opacity-0_3 g-mb-25">
+              <h2 class="u-heading-v3__title h6 text-uppercase g-brd-primary">Latest Posts</h2>
+            </div>
+          </div> -->
+          <!-- End Footer Content -->
 
+          <!-- Footer Content -->
+          <!-- <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
+            <div class="u-heading-v3-1 g-brd-white-opacity-0_3 g-mb-25">
+              <h2 class="u-heading-v3__title h6 text-uppercase g-brd-primary">Useful Links</h2>
+            </div>
+          </div> -->
+          <!-- End Footer Content -->
         </div>
       </div>
     </div>
@@ -138,9 +152,9 @@
     <!-- End Copyright Footer -->
 
     <a class="js-go-to u-go-to-v1" href="#!" data-type="fixed" data-position='{
-     "bottom": 15,
-     "right": 15
-   }' data-offset-top="400" data-compensation="#js-header" data-show-effect="zoomIn">
+      "bottom": 15,
+      "right": 15
+    }' data-offset-top="400" data-compensation="#js-header" data-show-effect="zoomIn">
       <i class="hs-icon hs-icon-arrow-top"></i>
     </a>
   </main>
@@ -148,23 +162,23 @@
   <div class="u-outer-spaces-helper"></div>
 
   <!-- JS Global Compulsory -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
-  <script src="assets/vendor/popper.min.js"></script>
-  <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery-migrate.min.js"></script>
+  <!-- <script src="assets/vendor/popper.min.js"></script> -->
+  <script src="assets/js/bootstrap.min.js"></script>
 
   <!-- JS Implementing Plugins -->
-  <script src="assets/vendor/appear.js"></script>
+  <!-- <script src="assets/vendor/appear.js"></script>
   <script src="assets/vendor/slick-carousel/slick/slick.js"></script>
   <script src="assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
   <script src="assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
   <script src="assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
   <script src="assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
   <script src="assets/vendor/fancybox/jquery.fancybox.min.js"></script>
-  <script src="assets/vendor/cubeportfolio-full/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+  <script src="assets/vendor/cubeportfolio-full/cubeportfolio/js/jquery.cubeportfolio.min.js"></script> -->
 
   <!-- JS Revolution Slider -->
-  <script src="assets/vendor/revolution-slider/revolution/js/jquery.themepunch.tools.min.js"></script>
+  <!-- <script src="assets/vendor/revolution-slider/revolution/js/jquery.themepunch.tools.min.js"></script>
   <script src="assets/vendor/revolution-slider/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="assets/vendor/revolution-slider/revolution-addons/particles/js/revolution.addon.particles.min.js"></script>
   <script src="assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.actions.min.js"></script>
@@ -175,28 +189,32 @@
   <script src="assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
   <script src="assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
   <script src="assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-  <script src="assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.video.min.js"></script>
+  <script src="assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.video.min.js"></script> -->
 
   <!-- JS Lovely -->
   <script src="assets/js/hs.core.js"></script>
-  <script src="assets/js/components/hs.carousel.js"></script>
+  <!-- <script src="assets/js/components/hs.carousel.js"></script>
   <script src="assets/js/components/hs.header.js"></script>
   <script src="assets/js/helpers/hs.hamburgers.js"></script>
   <script src="assets/js/components/hs.tabs.js"></script>
   <script src="assets/js/components/hs.popup.js"></script>
   <script src="assets/js/components/hs.counter.js"></script>
   <script src="assets/js/components/hs.cubeportfolio.js"></script>
-  <script src="assets/js/components/hs.go-to.js"></script>
+  <script src="assets/js/components/hs.go-to.js"></script> -->
 
   <!-- JS Customization -->
+<<<<<<< HEAD
+  <script src="assets/js/custom.js"></script>
+  <script src="../assets/js/app.js"></script>
+=======
 
+>>>>>>> efb6b780d414af11f62be2245ecfaca07337e71b
 
   <!-- JS Plugins Init. -->
   <script>
     // initialization of slider revolution
       var tpj = jQuery,
         revapi1174;
-
       tpj(document).ready(function () {
         if (tpj("#rev_slider_1174_1").revolution == undefined) {
           revslider_showDoubleJqueryError("#rev_slider_1174_1");
@@ -239,40 +257,31 @@
           });
         }
       });
-
       $(document).on('ready', function () {
         // initialization of carousel
         $.HSCore.components.HSCarousel.init('.js-carousel');
-
         // initialization of tabs
         $.HSCore.components.HSTabs.init('[role="tablist"]');
-
         // initialization of popups
         $.HSCore.components.HSPopup.init('.js-fancybox');
-
         // initialization of counters
         var counters = $.HSCore.components.HSCounter.init('[class*="js-counter"]');
-
         // initialization of go to
         $.HSCore.components.HSGoTo.init('.js-go-to');
       });
-
       $(window).on('load', function () {
         // initialization of header
         $.HSCore.components.HSHeader.init($('#js-header'));
         $.HSCore.helpers.HSHamburgers.init('.hamburger');
-
         // initialization of HSMegaMenu component
         $('.js-mega-menu').HSMegaMenu({
           event: 'hover',
           pageContainer: $('.container'),
           breakpoint: 991
         });
-
         // initialization of cubeportfolio
         $.HSCore.components.HSCubeportfolio.init('.cbp');
       });
-
       $(window).on('resize', function () {
         setTimeout(function () {
           $.HSCore.components.HSTabs.init('[role="tablist"]');

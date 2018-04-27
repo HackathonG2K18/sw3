@@ -1,6 +1,7 @@
 const baseUrl = 'https://swapi.co/api/people/'
 const characterSection = document.querySelector('#partner1')
 const characterSection2 = document.querySelector('#partner2')
+const sexPartner = document.querySelector('.sex-partner')
 
 // const random = (Math.random() * 100).toFixed(0)
 
@@ -31,7 +32,7 @@ function getCharacters() {
         `
                 characterSection.innerHTML += html
 
-            }
+            // }
         })
 }
 
