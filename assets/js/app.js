@@ -10,12 +10,11 @@ function getCharacters() {
         .then(function (people) {
             console.log(people)
             var peopleArray = people.results
-            for (var i = 0; i < 3; i++) {
+            for (var i = 0; i < peopleArray.length; i++) {
                 var person = people.results[i]
                 var name = person.name
                 var hairColor = person.hair_color
                 var height = person.height
-                var species = person.species
                 var gender = person.gender
                 var html = `
           <section>
@@ -23,9 +22,7 @@ function getCharacters() {
             <ul>
               <li>Hair: ${hairColor}</li>
               <li>Height: ${height}cm</li>
-              <li>Species: ${species}</li>
               <li>Gender: ${gender}</li>
-              <button>Boldly Go</button>
             </ul>
           </section>
         `
@@ -34,4 +31,4 @@ function getCharacters() {
             }
         })
 }
-getCharacters()
+getCharacters();
